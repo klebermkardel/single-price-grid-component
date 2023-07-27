@@ -1,0 +1,45 @@
+:root {
+  --clr-primary-cyan: hsl(179, 62%, 43%);
+  --clr-primary-bright-yellow: hsl(71, 73%, 54%);
+  --clr-neutral-light-gray: hsl(204, 43%, 93%);
+  --clr-neutral-grayish-blue: hsl(218, 22%, 67%);
+  --font-family: "Karla", sans-serif;
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: var(--font-family);
+}
+html:focus-within {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
