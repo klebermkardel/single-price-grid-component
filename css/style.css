@@ -85,6 +85,7 @@ h1 {
 .content-2 {
   background-color: var(--clr-primary-cyan);
   display: grid;
+  border-radius: 0 0 0 8px;
 }
 
 span {
@@ -109,6 +110,7 @@ button {
 
 .content-3 {
   background-color: #52bebd;
+  border-radius: 0 0 8px 0;
 }
 
 .content-3 h2 {
